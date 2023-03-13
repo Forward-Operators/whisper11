@@ -6,7 +6,7 @@ class LiveAudioInput
   end
 
   def start
-    cmdline = "#{@rec_bin} -b 16 -t coreaudio -t .wav - silence 1 0.5 1% 1 1.0 1% rate 16k pad 0.5 0.5 2>/dev/null"
+    cmdline = "#{@rec_bin} -b 16 -t coreaudio -t .wav - silence 1 0.5 1% 1 2.5 1% rate 16k pad 0.5 0.5 2>/dev/null"
 
     while true
       io = IO.popen(cmdline, 'r')
