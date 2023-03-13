@@ -19,11 +19,11 @@ This assumes you are running on a relatively fresh copy of macOS.
 
 1. Clone the repo.
 2. Use `bundle install` command in the repo directory to install dependencies.
-3. Install [Homebrew](https://brew.sh/) (or equivalent package manager)
-4. With it, install: mpg123, lame, and sox
+3. Install [Homebrew](https://brew.sh/) (or equivalent package manager).
+4. With it, install: mpg123, lame, and sox.
 5. Copy `.env.example` to `.env` and fill in the values. More directions in the file.
 
-If you wish to run Whisper locally wish whisper.cpp, follow their instructions [here](https://github.com/ggerganov/whisper.cpp#quick-start).
+If you wish to run Whisper locally with whisper.cpp, follow their instructions [here](https://github.com/ggerganov/whisper.cpp#quick-start).
 
 ### Running
 
