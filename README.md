@@ -33,6 +33,22 @@ Just simply run `./whisper11.rb` and it should start working.
 
 It should go in the loop of trying to get a voice input from the user by running `rec` command from the sox package. As it detects brief silence, it will cut the recording short, and pass it through Whisper to understand what you said. Then is passes that understood text input to ChatGPT, to elicit a response. Once it gets the response text, it will then try to generate voice using Eleven Labs or say command and play it back to you.
 
+## Further improvements
+
+- [ ] Make sure sox/rec always chooses the right input device. Does not always feel deterministic.
+- [ ] Fine-tune sox/rec command to better detect silence.
+- [ ] Get rid of sox-based input altogether. Using something lower-level, should allow for better control over when to cut.
+- [ ] Allow keyboard input as well?
+- [ ] LangChain integration
+
+## License
+
+MIT
+
+## Brought to life by
+
+[ForwardOperators](https://www.fwdoperators.com)
+
 ## Ruby?!
 
 Yes.
