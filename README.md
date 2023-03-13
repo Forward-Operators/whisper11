@@ -3,7 +3,7 @@ Whisper, ChatGPT and Eleven Labs Voice walk into a bar...
 
 ## What is this?
 
-This is a very quick and dirty integration between p[OpenAI Whisper](https://openai.com/research/whisper) speech-to-text, [ChatGPT](https://openai.com/blog/chatgpt) and [Eleven Labs](https://beta.elevenlabs.io) text-to-speech technology.
+This is a very quick and dirty integration between [OpenAI Whisper](https://openai.com/research/whisper) speech-to-text, [ChatGPT](https://openai.com/blog/chatgpt) and [Eleven Labs](https://beta.elevenlabs.io) text-to-speech technology.
 
 It can use local Whisper model running locally (using Georgi Gerganov's amazing [whisper.cpp](https://github.com/ggerganov/whisper.cpp)) or use OpenAI API. As a fallback for Eleven Labs Voice, it can use local macOS `say` command.
 
