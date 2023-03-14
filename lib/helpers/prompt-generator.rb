@@ -4,7 +4,7 @@ class PromptGenerator
   end
 
   def prefix
-    "Use short sentences and be clear."
+    "Use short sentences and be clear. Respond in English."
   end
 
   def generate

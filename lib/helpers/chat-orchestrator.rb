@@ -28,14 +28,14 @@ class ChatOrchestrator
       
       # use speech to text engine to convert audio buffer we've received to text
       speech_text = @speech_to_text.process(audio_buffer)
-    
-      # give feedback by displaying what we've understood
-      UI.report_understood_speech(speech_text)
-    
-      if speech_text.empty?
+        
+      if speech_text.nil? || speech_text.empty?
         # we might have not understood what the user said, let's invite them to try again
-        _ask_to_repeat
+        ask_to_repeat
       else
+        # give feedback by displaying what we've understood
+        UI.report_understood_speech(speech_text)
+
         # let's remember what the user said for future context
         @conversation.remember_my_statement(speech_text)
 
