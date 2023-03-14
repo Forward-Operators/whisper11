@@ -2,7 +2,8 @@ require './lib/text-to-speech/local-voice'
 
 # generates voice files with text prompts
 class TextAudioInput
-  def initialize(texts: [], synthesizer: LocalVoice.new)
+  # daniel is nice British English voice
+  def initialize(texts: [], synthesizer: LocalVoice.new(voice_name: 'Daniel'))
     @texts = texts
     @synthesizer = synthesizer
 

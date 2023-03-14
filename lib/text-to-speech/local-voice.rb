@@ -1,7 +1,7 @@
 require 'tempfile'
 
 class LocalVoice
-  def initialize(voice_name = "Zosia", lame_bin = ENV['LAME_BIN'])
+  def initialize(voice_name: "Zosia", lame_bin: ENV['LAME_BIN'])
     @voice_name = voice_name
     @lame_bin = lame_bin
 
