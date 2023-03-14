@@ -1,7 +1,7 @@
 # whisper11
 Whisper, ChatGPT and Eleven Labs Voice walk into a bar...
 
-[!Short demo](https://www.youtube.com/watch?v=45fSHpoOKmo)
+[![Short demo video](https://img.youtube.com/vi/45fSHpoOKmo/0.jpg)](https://www.youtube.com/watch?v=45fSHpoOKmo)
 
 ## What is this
 This is a very quick and dirty integration between [OpenAI Whisper](https://openai.com/research/whisper) speech-to-text, [ChatGPT](https://openai.com/blog/chatgpt) and [Eleven Labs](https://beta.elevenlabs.io) text-to-speech technology.
