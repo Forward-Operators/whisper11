@@ -25,7 +25,7 @@ require './lib/audio-input/audio-input-files'
 
 # text audio input so it's like audio-input-files, but
 # generates audio data from text on the fly
-require './lib/audio-input/audio-input-text'
+# require './lib/audio-input/audio-input-text'
 
 # playing generated audio with mpg123
 require './lib/audio-output/audio-output-live'
@@ -48,10 +48,10 @@ require './lib/speech-to-text/openai-whisper'
 
 chat = ChatOrchestrator.new(
   # this generates audio for sequence of prompts
-  audio_input: TextAudioInput.new(texts: ['Tell me a terrible joke about LLMs', 'No dobra, powiedz jakiś lepszy.']),
+  # audio_input: TextAudioInput.new(texts: ['Tell me a terrible joke about LLMs', 'No dobra, powiedz jakiś lepszy.']),
 
   # this uses sox to record audio from microphone (breaks for silence)
-  # audio_input: LiveAudioInput.new,
+  audio_input: LiveAudioInput.new,
 
   # this will feed audio files from given directory as if they were recorded live,
   # audio_input: FilesAudioInput.new("../data/audio"),
